@@ -4,6 +4,10 @@ Web Component wrapper for getUserMedia API using Polymer
 
 > Maintained by [Eduardo Lundgren](https://github.com/eduardolundgren).
 
+## Demo
+
+![Camera Element](http://f.cl.ly/items/3U3E2w0n3q0i3Y403s1Y/camera-element.gif)
+
 ## Usage
 
 1. Import Web Components' polyfill:
@@ -26,10 +30,9 @@ Web Component wrapper for getUserMedia API using Polymer
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`audio`    | `true`, `false`           | `false`             | Capture audio using the device's local microphone
-
+Attribute  | Options | Default | Description
+---        | ---     | ---     | ---
+`audio`    | `true`  | `false` | Capture audio using the device's local microphone
 
 ## Contributing
 
