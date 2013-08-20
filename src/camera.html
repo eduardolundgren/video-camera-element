@@ -1,34 +1,34 @@
 <polymer-element name="camera" extends="video" attributes="audio">
 <script>
-    Polymer('camera', {
-        created: function() {
-            var video = this;
+	Polymer('camera', {
+		created: function() {
+			var video = this;
 
-            navigator.getUserMedia({
-                audio: this.audio !== null,
-                video: true
-            },
-            function(stream) {
-                try {
-                    video.src = URL.createObjectURL(stream);
-                }
-                catch (err) {
-                    video.src = stream;
-                }
-            },
-            function(err) {
-                throw Error(err);
-            });
-        }
-    });
+			navigator.getUserMedia({
+				audio: this.audio !== null,
+				video: true
+			},
+			function(stream) {
+				try {
+					video.src = URL.createObjectURL(stream);
+				}
+				catch (err) {
+					video.src = stream;
+				}
+			},
+			function(err) {
+				throw Error(err);
+			});
+		}
+	});
 
-    // window.URL polyfill
-    if (!window.URL) {
-        window.URL = window.URL || window.webkitURL || window.msURL || window.oURL;
-    }
-    // getUserMedia polyfill
-    if (!navigator.getUserMedia) {
-        navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
-    }
+	// window.URL polyfill
+	if (!window.URL) {
+		window.URL = window.URL || window.webkitURL || window.msURL || window.oURL;
+	}
+	// getUserMedia polyfill
+	if (!navigator.getUserMedia) {
+		navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+	}
 </script>
 </polymer-element>
