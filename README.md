@@ -1,12 +1,14 @@
 # &lt;camera&gt;
 
-Web Component wrapper for getUserMedia API using Polymer
+Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/editor/getusermedia.html) using Polymer.
 
 > Maintained by [Eduardo Lundgren](https://github.com/eduardolundgren).
 
 ## Demo
 
 ![Camera Element](http://f.cl.ly/items/3U3E2w0n3q0i3Y403s1Y/camera-element.gif)
+
+> [Check it live](http://customelements.github.io/camera-element).
 
 ## Usage
 
@@ -34,6 +36,8 @@ Attribute  | Options | Default | Description
 ---        | ---     | ---     | ---
 `audio`    | `true`  | `false` | Capture audio using the device's local microphone
 
+> See [getUserMedia API spec](http://dev.w3.org/2011/webrtc/editor/getusermedia.html).
+
 ## Contributing
 
 1. Fork it!
@@ -44,7 +48,7 @@ Attribute  | Options | Default | Description
 
 ## History
 
-* v0.1.0 August 20, 2013
+* [v0.1.0](https://github.com/customelements/camera-element/releases/tag/0.1.0) August 20, 2013
 	* Initial development release
 * v0.0.1 August 19, 2013
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
