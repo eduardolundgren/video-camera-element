@@ -1,8 +1,8 @@
-# &lt;my-element&gt;
+# &lt;camera&gt;
 
-TODO: Write a project description
+Web Component wrapper for getUserMedia API using Polymer
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [Eduardo Lundgren](https://github.com/eduardolundgren).
 
 ## Usage
 
@@ -15,22 +15,20 @@ TODO: Write a project description
 2. Import Custom Element:
 
 	```html
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/camera.html">
 	```
 
 3. Start using it!
 
-	```xml
-	<my-element></my-element>
+	```html
+	<video is="camera"></video>
 	```
 
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+`audio`    | `true`, `false`           | `false`             | Capture audio using the device's local microphone
 
 
 ## Contributing
