@@ -2,18 +2,18 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>My Element</title>
+	<title>&lt;camera&gt;</title>
 
 	<!-- Importing Web Component's Polyfill -->
 	<script src="lib/polymer.min.js"></script>
 
 	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/camera.html">
 </head>
 <body>
 
 	<!-- Using Custom Elements -->
-	<my-element></my-element>
+	<video is="camera" audio autoplay controls></video>
 
 </body>
 </html>
