@@ -1,4 +1,4 @@
-<polymer-element name="camera" extends="video" attributes="audio">
+<polymer-element name="camera" extends="video" attributes="audio filter">
 <script>
 	Polymer('camera', {
 		created: function() {
@@ -19,6 +19,12 @@
 			function(err) {
 				throw Error(err);
 			});
+		},
+
+		filterChanged: function(oldVal) {
+			var filter = this.getAttribute('filter');
+			this.classList.remove(oldVal);
+			this.classList.add(filter);
 		}
 	});
 
@@ -31,4 +37,62 @@
 		navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
 	}
 </script>
+<style>
+	.blur {
+	  -webkit-filter: blur(3px);
+	  -moz-filter: blur(3px);
+	  -ms-filter: blur(3px);
+	  -o-filter: blur(3px);
+	  filter: blur(3px);
+	}
+	.brightness {
+		-webkit-filter: brightness(5);
+		-moz-filter: brightness(5);
+		-ms-filter: brightness(5);
+		-o-filter: brightness(5);
+		filter: brightness(5);
+	}
+	.contrast {
+		-webkit-filter: contrast(8);
+		-moz-filter: contrast(8);
+		-ms-filter: contrast(8);
+		-o-filter: contrast(8);
+		filter: contrast(8);
+	}
+	.hue-rotate {
+		-webkit-filter: hue-rotate(90deg);
+		-moz-filter: hue-rotate(90deg);
+		-ms-filter: hue-rotate(90deg);
+		-o-filter: hue-rotate(90deg);
+		filter: hue-rotate(90deg);
+	}
+	.saturate {
+		-webkit-filter: saturate(10);
+		-moz-filter: saturate(10);
+		-ms-filter: saturate(10);
+		-o-filter: saturate(10);
+		filter: saturate(10);
+	}
+	.grayscale {
+		-webkit-filter: grayscale(1);
+		-moz-filter: grayscale(1);
+		-ms-filter: grayscale(1);
+		-o-filter: grayscale(1);
+		filter: grayscale(1);
+	}
+	.sepia {
+		-webkit-filter: sepia(1);
+		-moz-filter: sepia(1);
+		-ms-filter: sepia(1);
+		-o-filter: sepia(1);
+		filter: sepia(1);
+	}
+	.invert {
+		-webkit-filter: invert(1);
+		-moz-filter: invert(1);
+		-ms-filter: invert(1);
+		-o-filter: invert(1);
+		filter: invert(1);
+	}
+</style>
 </polymer-element>
