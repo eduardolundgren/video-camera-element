@@ -47,11 +47,11 @@ Attribute  | Options                                                            
 
 ## History
 
-* [v0.1.2](https://github.com/eduardolundgren/google-maps/releases/tag/0.1.2) September 18, 2013
+* [v0.1.2](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.2) September 18, 2013
 	* Rename element from `<camera>` to `<video-camera>`
-* [v0.1.1](https://github.com/eduardolundgren/video-camera/releases/tag/0.1.1) August 21, 2013
+* [v0.1.1](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.1) August 21, 2013
     * Add filter effects
-* [v0.1.0](https://github.com/eduardolundgren/video-camera/releases/tag/0.1.0) August 20, 2013
+* [v0.1.0](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.0) August 20, 2013
     * Initial development release
 * v0.0.1 August 19, 2013
     * Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
