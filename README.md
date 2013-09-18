@@ -1,14 +1,12 @@
-# &lt;camera&gt;
+# &lt;video-camera&gt;
 
 Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/editor/getusermedia.html) using Polymer.
-
-> Maintained by [Eduardo Lundgren](https://github.com/eduardolundgren).
 
 ## Demo
 
 ![Camera Element](http://f.cl.ly/items/3U3E2w0n3q0i3Y403s1Y/camera-element.gif)
 
-> [Check it live](http://eduardolundgren.github.io/camera-element).
+> [Check it live](http://eduardolundgren.github.io/video-camera).
 
 ## Usage
 
@@ -21,13 +19,13 @@ Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/edito
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="src/camera.html">
+    <link rel="import" href="src/video-camera.html">
     ```
 
 3. Start using it!
 
     ```html
-    <video is="camera"></video>
+    <video is="video-camera"></video>
     ```
 
 ## Options
@@ -49,9 +47,11 @@ Attribute  | Options                                                            
 
 ## History
 
-* [v0.1.1](https://github.com/eduardolundgren/camera-element/releases/tag/0.1.1) August 21, 2013
+* [v0.1.2](https://github.com/eduardolundgren/google-maps/releases/tag/0.1.2) September 18, 2013
+	* Rename element from `<camera>` to `<video-camera>`
+* [v0.1.1](https://github.com/eduardolundgren/video-camera/releases/tag/0.1.1) August 21, 2013
     * Add filter effects
-* [v0.1.0](https://github.com/eduardolundgren/camera-element/releases/tag/0.1.0) August 20, 2013
+* [v0.1.0](https://github.com/eduardolundgren/video-camera/releases/tag/0.1.0) August 20, 2013
     * Initial development release
 * v0.0.1 August 19, 2013
     * Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
