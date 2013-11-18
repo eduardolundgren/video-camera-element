@@ -6,7 +6,7 @@ Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/edito
 
 ![Camera Element](http://f.cl.ly/items/3U3E2w0n3q0i3Y403s1Y/camera-element.gif)
 
-> [Check it live](http://eduardolundgren.github.io/video-camera).
+> [Check it live](http://eduardolundgren.github.io/video-camera-element).
 
 ## Usage
 
