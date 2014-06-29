@@ -1,41 +1,85 @@
-# &lt;video-camera&gt;
+# &lt;video-camera-element&gt;
 
-Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/editor/getusermedia.html) using Polymer.
+> Web Component wrapper for [getUserMedia API](http://dev.w3.org/2011/webrtc/editor/getusermedia.html) using Polymer.
 
 ## Demo
 
 ![Camera Element](http://f.cl.ly/items/3U3E2w0n3q0i3Y403s1Y/camera-element.gif)
 
-> [Check it live](http://eduardolundgren.github.io/video-camera-element).
+[Check it live!](http://eduardolundgren.github.io/video-camera-element)
+
+## Install
+
+Install the component using [Bower](http://bower.io/):
+
+```sh
+$ bower install video-camera-element --save
+```
+
+Or [download as ZIP](https://github.com/eduardolundgren/video-camera-element/archive/master.zip).
 
 ## Usage
 
 1. Import Web Components' polyfill:
 
     ```html
-    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+    <script src="bower_components/platform/platform.js"></script>
     ```
 
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="src/video-camera.html">
+    <link rel="import" href="bower_components/video-camera-element/dist/video-camera.html">
     ```
 
 3. Start using it!
 
     ```html
-    <video is="video-camera"></video>
+    <video is="video-camera" autoplay></video>
     ```
 
 ## Options
 
-Attribute  | Options                                                                                     | Default | Description
----        | ---                                                                                         | ---     | ---
-`audio`    | `true`                                                                                      | `false` | Capture audio using the device's local microphone
-`filter`   | `blur`, `brightness`, `contrast`, `hue-rotate`, `saturate`, `grayscale`, `sepia`, `invert`  | None    | Apply filter effects
+Attribute  | Options     | Default      | Description
+---        | ---         | ---          | ---
+`audio`    | `true`, `false` | `false`  | Capture audio using the device's local microphone
+`filter`   | `blur`, `brightness`, `contrast`, `hue-rotate`, `saturate`, `grayscale`, `sepia`, `invert`  | None    | Apply CSS filter effects
 
 > See [getUserMedia API spec](http://dev.w3.org/2011/webrtc/editor/getusermedia.html).
+
+## Development
+
+In order to run it locally you'll need to fetch some dependencies and a basic server setup.
+
+* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+
+    ```sh
+    $ [sudo] npm install -g bower grunt-cli
+    ```
+
+* Install local dependencies:
+
+    ```sh
+    $ bower install && npm install
+    ```
+
+* To test your project, start the development server and open `http://localhost:8000`.
+
+    ```sh
+    $ grunt server
+    ```
+
+* To build the distribution files before releasing a new version.
+
+    ```sh
+    $ grunt build
+    ```
+
+* To provide a live demo, send everything to `gh-pages` branch.
+
+    ```sh
+    $ grunt deploy
+    ```
 
 ## Contributing
 
@@ -47,14 +91,7 @@ Attribute  | Options                                                            
 
 ## History
 
-* [v0.1.2](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.2) September 18, 2013
-	* Rename element from `<camera>` to `<video-camera>`
-* [v0.1.1](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.1) August 21, 2013
-    * Add filter effects
-* [v0.1.0](https://github.com/eduardolundgren/video-camera-element/releases/tag/0.1.0) August 20, 2013
-    * Initial development release
-* v0.0.1 August 19, 2013
-    * Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
+For detailed changelog, check [Releases](https://github.com/eduardolundgren/video-camera-element/releases).
 
 ## License
 

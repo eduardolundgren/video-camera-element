@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>&lt;video-camera&gt;</title>
+    <meta charset="UTF-8">
+    <title>&lt;video-camera-element&gt;</title>
 
-	<!-- Importing Web Component's Polyfill -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+    <!-- Importing Web Component's Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
 
-	<!-- Importing Custom Elements -->
-	<link rel="import" href="src/video-camera.html">
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/video-camera.html">
 </head>
 <body>
 
-	<!-- Using Custom Elements -->
-	<video is="video-camera" audio autoplay controls></video>
+    <!-- Using Custom Elements -->
+    <video is="video-camera" autoplay></video>
 
 </body>
 </html>
