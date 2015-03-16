@@ -1,19 +1,19 @@
 {
-    "name": "video-camera-element",
-    "version": "0.1.3",
-    "description": "Web Component wrapper for getUserMedia API using Polymer",
-    "license": "MIT",
-    "main": "dist/video-camera.html",
-    "keywords": [
-        "polymer",
-        "web-components"
-    ],
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-        "polymer": "Polymer/polymer#~0.3.3"
-    }
+  "name": "video-camera-element",
+  "version": "0.1.3",
+  "description": "Web Component wrapper for getUserMedia API using Polymer",
+  "license": "MIT",
+  "main": "dist/video-camera.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5"
+  }
 }
